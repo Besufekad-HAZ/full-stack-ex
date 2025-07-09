@@ -1,6 +1,7 @@
 com/mpesa/acquisition/entity/Application.class
 com/mpesa/acquisition/repository/BranchRepository.class
 com/mpesa/acquisition/repository/TransactionHistoryRepository.class
+com/mpesa/acquisition/config/DataInitializer.class
 com/mpesa/acquisition/MpesaBackendApplication.class
 com/mpesa/acquisition/entity/TransactionHistory.class
 com/mpesa/acquisition/controller/ApplicationController.class
