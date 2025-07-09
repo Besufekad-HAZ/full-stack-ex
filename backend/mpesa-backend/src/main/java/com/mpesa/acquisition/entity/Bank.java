@@ -18,6 +18,7 @@ public class Bank {
     private LocalDateTime createdAt;
 
     @OneToMany(mappedBy = "bank", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<Branch> branches;
 
     // Constructors
