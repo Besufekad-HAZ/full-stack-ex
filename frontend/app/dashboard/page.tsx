@@ -79,7 +79,7 @@ export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-mpesa-green-600 py-3 px-4 sm:px-6 lg:px-8">
+      <div className="bg-green-600 py-3 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="flex items-center">
             <div className="text-white font-bold text-xl">M-PESA</div>
@@ -166,7 +166,7 @@ export default function DashboardPage() {
               className="btn-mpesa-outline p-4 text-left"
             >
               <div className="flex items-center">
-                <ClockIcon className="h-8 w-8 text-mpesa-green-600 mr-3" />
+                <ClockIcon className="h-8 w-8 text-green-600 mr-3" />
                 <div>
                   <div className="font-medium">Refresh Status</div>
                   <div className="text-sm opacity-70">Check application status</div>

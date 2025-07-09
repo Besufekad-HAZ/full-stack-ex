@@ -100,7 +100,7 @@ export default function ConfirmationPage() {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-mpesa-green-600 mx-auto"></div>
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-green-600 mx-auto"></div>
           <p className="mt-4 text-gray-600">Loading...</p>
         </div>
       </div>
@@ -110,7 +110,7 @@ export default function ConfirmationPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-mpesa-green-600 py-3 px-4 sm:px-6 lg:px-8">
+      <div className="bg-green-600 py-3 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="flex items-center">
             <div className="text-white font-bold text-xl">M-PESA</div>
@@ -134,7 +134,7 @@ export default function ConfirmationPage() {
 
           {/* Content */}
           <div className="p-6">
-            <div className="border-l-4 border-mpesa-green-600 pl-6">
+            <div className="border-l-4 border-green-600 pl-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-6">
                 Please review your information before submitting
               </h3>

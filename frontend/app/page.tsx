@@ -105,7 +105,7 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       {/* Header */}
-      <div className="bg-mpesa-green-600 py-3 px-4 sm:px-6 lg:px-8">
+      <div className="bg-green-600 py-3 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="flex items-center">
             <div className="text-white font-bold text-xl">M-PESA</div>
@@ -229,7 +229,7 @@ export default function LoginPage() {
                   className={`btn-mpesa w-full py-3 text-sm font-medium ${
                     !isFormValid || isLoading
                       ? 'opacity-50 cursor-not-allowed'
-                      : 'hover:bg-mpesa-green-700'
+                      : 'hover:bg-green-700'
                   }`}
                 >
                   {isLoading ? 'Logging in...' : 'LOGIN'}
@@ -240,7 +240,7 @@ export default function LoginPage() {
               <div className="text-center">
                 <button
                   type="button"
-                  className="text-sm text-mpesa-green-600 hover:text-mpesa-green-700 font-medium"
+                  className="text-sm text-green-600 hover:text-green-700 font-medium"
                 >
                   FORGOT PASSWORD?
                 </button>

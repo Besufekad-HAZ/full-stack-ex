@@ -197,7 +197,7 @@ export default function KYCFormPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-mpesa-green-600 py-3 px-4 sm:px-6 lg:px-8">
+      <div className="bg-green-600 py-3 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="flex items-center">
             <div className="text-white font-bold text-xl">M-PESA</div>
@@ -247,10 +247,10 @@ export default function KYCFormPage() {
                 <span className="ml-2 text-sm font-medium text-gray-600">Business Owner</span>
               </div>
               <div className="flex items-center">
-                <div className="w-8 h-8 bg-mpesa-green-600 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
                   <CheckCircleIcon className="w-5 h-5 text-white" />
                 </div>
-                <span className="ml-2 text-sm font-medium text-mpesa-green-600">Fund Withdraw</span>
+                <span className="ml-2 text-sm font-medium text-green-600">Fund Withdraw</span>
               </div>
             </div>
             <div className="text-sm text-gray-500">
@@ -269,7 +269,7 @@ export default function KYCFormPage() {
             {/* Bank Selection */}
             <div>
               <label className="flex items-center text-sm font-medium text-gray-700 mb-2">
-                <span className="w-4 h-4 bg-mpesa-green-600 rounded-full mr-2"></span>
+                <span className="w-4 h-4 bg-green-600 rounded-full mr-2"></span>
                 Bank
               </label>
               <select
@@ -347,7 +347,7 @@ export default function KYCFormPage() {
                 <div className="space-y-1 text-center">
                   <CloudArrowUpIcon className="mx-auto h-12 w-12 text-gray-400" />
                   <div className="flex text-sm text-gray-600">
-                    <label htmlFor="file-upload" className="relative cursor-pointer bg-white rounded-md font-medium text-mpesa-green-600 hover:text-mpesa-green-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-mpesa-green-500">
+                    <label htmlFor="file-upload" className="relative cursor-pointer bg-white rounded-md font-medium text-green-600 hover:text-green-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-green-500">
                       <span>Upload a file</span>
                       <input
                         id="file-upload"
