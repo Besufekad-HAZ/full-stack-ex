@@ -31,11 +31,12 @@ class RootController {
         response.put("service", "M-PESA Acquisition Portal Backend");
         response.put("status", "Running");
         response.put("version", "1.0.0");
-        response.put("endpoints", new String[]{
+                response.put("endpoints", new String[]{
             "/api/health",
             "/api/banks",
             "/api/branches?bank_id={id}",
             "/api/applications/submit",
+            "/api/applications/draft",
             "/api/transaction"
         });
         return ResponseEntity.ok(response);

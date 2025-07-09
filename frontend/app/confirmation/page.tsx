@@ -40,7 +40,7 @@ export default function ConfirmationPage() {
     }
   }, [router])
 
-  const handleSubmit = async (status: 'SUBMITTED' | 'DRAFT') => {
+  const handleSubmit = async (action: 'SUBMIT' | 'DRAFT') => {
     if (!formData) return
 
     setIsSubmitting(true)
@@ -55,11 +55,16 @@ export default function ConfirmationPage() {
         branchName: formData.branchName,
         accountName: formData.accountName,
         accountNumber: formData.accountNumber,
-        proofOfBankAccount: formData.proofOfBankAccount,
-        status: status
+        proofOfBankAccount: formData.proofOfBankAccount
       }
 
-      const response = await axios.post('http://localhost:8080/api/applications/submit', submissionData)
+            // Use different endpoints based on action
+      const baseURL = 'http://localhost:8080'
+      const endpoint = action === 'DRAFT'
+        ? `${baseURL}/api/applications/draft`
+        : `${baseURL}/api/applications/submit`
+
+      const response = await axios.post(endpoint, submissionData)
 
       if (response.data.status === 'SUCCESS') {
         setSuccess(response.data.message)
@@ -213,7 +218,7 @@ export default function ConfirmationPage() {
               </button>
               <button
                 type="button"
-                onClick={() => handleSubmit('SUBMITTED')}
+                onClick={() => handleSubmit('SUBMIT')}
                 disabled={isSubmitting}
                 className="btn-mpesa px-6 py-2"
               >

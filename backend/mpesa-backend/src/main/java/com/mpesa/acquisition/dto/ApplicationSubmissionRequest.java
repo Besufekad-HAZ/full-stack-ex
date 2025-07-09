@@ -25,7 +25,6 @@ public class ApplicationSubmissionRequest {
 
     private String proofOfBankAccount;
 
-    @NotBlank(message = "Status is required")
     private String status;
 
     // Constructors
